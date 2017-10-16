@@ -1,0 +1,91 @@
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body {
+    min-height: 100vh;
+    background-color: #3399cc;
+    border: 20px solid #2b81ac;
+    color: #fff;
+    font-family : "Arial Narrow", sans-serif, Times ;
+    font-weight: bold;
+}
+.main {
+    margin: auto;
+    width: 900px;
+}
+.header {
+    margin: 1rem 0;
+}
+.content {
+    margin-bottom: 1rem;
+    line-height: 2rem;
+    font-size: 0; /*убираем полоску*/
+}
+.content__item {
+    font-size: 1rem; /*убираем полоску*/
+    width: 25%;
+    display:inline-block;
+    border: 3px solid #fff;
+    text-align: center;
+    vertical-align: top;
+    padding: 10px 0;
+}
+.content__item_lisbon {
+    background-color: #3399cc;
+    width: 50%;
+}
+.content__item_paris {
+    background-color: #33cccc;
+    border-left: 0;
+}
+.content__item_belgrade {
+    background-color: #996699;
+    border-left: 0;
+}
+.content__item_moscow {
+    background-color: #c24747;
+    border-top: 0;
+}
+.content__item_telaviv {
+    background-color: #e2674a;
+    border-top: 0;
+    border-left: 0;
+}
+.content__item_cair{
+    background-color: #ffcc66;
+    border-top: 0;
+    border-left: 0;
+}
+.content__item_newyork{
+    background-color: #99cc99;
+    border-top: 0;
+    border-left: 0;
+}
+.content__item_newdelhi{
+    background-color: #669999;
+    border-top: 0;
+}
+.content__item_sunfrancisco {
+    background-color: #cc6699;
+    width: 50%;
+    border-top: 0;
+    border-left: 0;
+}
+.content__item_tokyo{
+    background-color: #339966;
+    border-top: 0;
+    border-left: 0;
+}
+.content__item_sydney{
+    background-color: #666699;
+    width: 100%;
+    border-top: 0;
+}
+p:nth-child(2) {
+    opacity: 0.5;
+}
