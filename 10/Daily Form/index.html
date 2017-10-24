@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Daily Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500" rel="stylesheet">
+        <script>
+            // from http://sampsonblog.com/489/creating-a-autofocus-polyfill
+            (function () {
+                if ( document.createElement("input").autofocus === undefined ) {
+                    var forms = document.forms, fIndex = -1;
+                    while ( ++fIndex < forms.length ) {
+                        var elements = forms[ fIndex ].elements, eIndex = -1;
+                        while ( ++eIndex < elements.length ) {
+                            if ( elements[ eIndex ].attributes["autofocus"] ) {
+                                return false;
+                            }
+                        }
+                    }
+                }
+            }());
+        </script>
+    </head>
+    <body>
+        <div class="main">
+            <div class="wrap">
+                <header>
+                    <h1 class="header__title">Create your free account</h1>
+                    <span class="header__img"></span>
+                    <p class="header__content">Come and join our cool and amazing community, fill in your details
+                        to get started. Already have an account? <span>Log in. </span></p>
+                </header><!--end header-->
+                <div class="content clearfix">
+                    <h2 class="content__title">Form</h2>
+                        <form action="test_home.html">
+                            <h3 class="content__form">Content form</h3>
+                            <div class="content__half content__half_left">
+                                <input type="text" name="firstname" placeholder="First name" autofocus>
+                            </div>
+                            <div class="content__half content__half_right">
+                                <input type="text" name="lastname" placeholder="Last name">
+                            </div>
+                            <div class="content__center">
+                                <input type="email" name="email" placeholder="Email address">
+                            </div>
+                            <div class="content__center">
+                                <input type="password" name="pass" placeholder="Password">
+                            </div>
+                            <h3 class="content__button">Button for sign</h3>
+                            <div class="content__center content__center_button">
+                                <input type="submit" name="btn1" value="Sign up fo free">
+                            </div>
+                        </form><!--end form-->
+                </div><!--end content-->
+                <footer>
+                    <h2 class="footer__content">Agreement</h2>
+                    <p class="footer_content">By clicking on “Sign up for free”, you agree to the <span> Terms of Service </span> and
+                        the <span>Privacy Policy </span></p>
+                </footer>
+            </div><!--end wrap-->
+        </div><!--end main-->
+    </body>
+</html>
