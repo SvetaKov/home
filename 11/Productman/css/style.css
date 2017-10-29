@@ -1,0 +1,329 @@
+/** body {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}*/
+* {
+    box-sizing: border-box;
+}
+.clearfix::after,
+.clearfix::before, {
+    content: '';
+    clear: both;
+    display: table;
+
+}
+h1,h2,h3 {
+    margin: 0;
+}
+input {
+    outline: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+html {
+    font-size: 18px;
+}
+body {
+    font: 1rem 'Roboto', sans-serif;
+    background: #eeeeee;
+    color: #454545;
+}
+.container {
+    max-width: 1200px;
+    margin: 40px auto 30px auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.row::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.col {
+    padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+}
+.col-1 {
+    width: 8.333333333333333%;
+}
+.col-2 {
+    width: 16.66666666666667%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4 {
+    width: 33.33333333333333%;
+}
+.col-5 {
+    width: 41.66666666666667%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7{
+    width: 58.33333333333333%;
+}
+.col-8 {
+    width: 66.66666666666667%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10{
+    width: 83.33333333333333%;
+}
+.col-11{
+    width: 91.66666666666667%;
+}
+.col-12 {
+    width: 100%;
+}
+
+/*=================head
+                =============*/
+.header {
+    position: relative;
+    margin-top: 0;
+    height: 40px;
+    margin-bottom: 100px;
+}
+.header__title {
+    margin: 0;
+    padding: 0;
+    background: url(../i/sprite.png) no-repeat 0 -342px;
+    width: 272px;
+    height: 37px;
+    float: left;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+.header__title a {
+    display: block;
+    height: 100%;
+    text-indent: -9999px;
+}
+nav {
+    float: right;
+    position: relative;
+}
+.menu-box {
+    display: inline-block;
+    padding: 0;
+    position: relative;
+}
+.headhide {
+    position: absolute;
+    text-indent: -9999px;
+}
+li.menu-box__item {
+    list-style: none;
+    float: left;
+}
+.menu-box__item a:link {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #303030;
+    text-decoration: none;
+    padding-right: 35px;
+}
+.menu-box__item_menu {
+    background: url(../i/sprite.png) no-repeat 0 0;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top:5px;
+    right: 0;
+}
+/*=================content__slider
+                =============*/
+.content__slider {
+    font-size: 1.33rem;
+    line-height: 2rem;
+}
+.content__slider_left img{
+   width: 100%;
+}
+.content__slider_left p{
+    height: 100px;
+    text-align: right;
+    padding-left: 40px;
+    overflow: hidden;
+    text-overflow: clip;
+    margin: 50px 0 25px 0;
+    text-indent: -30px;
+    font-weight: lighter;
+}
+.content__slider_left a{
+    float: right;
+    text-decoration: none;
+    color: #e10011;
+    font-weight: bold;
+}
+.content__slider_right img {
+    margin: auto;
+    float: right;
+}
+.content__slider_center {
+   text-align: center;
+   margin: 60px auto 90px auto;
+}
+.content__slider_center> input {
+    display: none;
+}
+.content__slider_center> input + label {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #303030;
+    cursor: pointer;
+    z-index: 100;
+    position: relative;
+    margin-right: 9px;
+    top: 90%;
+    transition: background 0.8s ease-out 0s;
+}
+.content__slider_center> input + label:hover {
+    background-color: #e10011;
+}
+.content__slider_center> input:checked + label {
+    background-color: #e10011;
+}
+/*=================content__product
+                =============*/
+.content__product {
+    background-color: #fff;
+    padding: 110px 70px 70px 70px;
+}
+.content__product_title{
+    font-size: 2.666666666666667rem;
+    font-family: "Raleway";
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+    position: relative;
+}
+.content__product_bg {
+    background: url(../i/sprite.png) no-repeat 0 -380px;
+    display: inline-block;
+    height: 17px;
+    width: 213px;
+    position: absolute;
+    top:70px; left:0; right: 0;
+    margin: auto;
+}
+.content__product_text {
+    padding-top: 35px;
+    font-family: Raleway;
+    font-size: 1rem;
+    line-height: 1.333333333333rem;
+    text-align: center;
+    width: 585px;
+    margin: 0 auto 70px auto;
+}
+.content__product_imgbox img{
+    margin-right: 35px;
+    padding: 0;
+    float: left;
+}
+.content__product_imgbox img:nth-of-type(1){
+    width: auto;
+    margin-bottom: 36px;
+}
+.content__product_imgbox img:nth-of-type(2) {
+    margin-right: 0;
+    margin-bottom: 36px;
+}
+.content__product_imgbox img:nth-of-type(5) {
+    margin-right: 0;
+}
+/*=================content__news
+                =============*/
+.content__news_title {
+    margin-top:100px;
+    position: relative;
+}
+.content__news_text {
+    margin-bottom: 35px;
+}
+.content__news_form {
+    width: 705px;
+    margin: auto;
+    position: relative;
+    margin-bottom: 110px;
+}
+.content__news_input {
+    font-style: italic;
+    font-size: 1rem;
+    padding: 28px 28px 28px 60px;
+    border-bottom-left-radius: 35px;
+    border-top-left-radius: 35px;
+    width: 70%;
+}
+.content__news_button {
+    font-size: 1rem;
+    padding: 28px 55px 28px 0;
+    border-bottom-right-radius: 35px;
+    border-top-right-radius: 35px;
+    width: 30%;
+    background-color: #e10011;
+    float: right;
+    color: white;
+}
+.content__news_img {
+    background: url(../i/sprite.png) no-repeat 0 -47px;
+    width: 20px;
+    height: 15px;
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.footer {
+    text-align: center;
+    padding: 0;
+}
+.footer__box {
+    margin-bottom: 65px;
+   text-align: center;
+}
+.footer__box_item {
+    width: 70px;
+    height: 70px;
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer__box_item:last-child {
+   margin-right:0;
+}
+.footer__box_f {
+    background: url(../i/sprite.png) no-repeat 0 -61px;
+}
+.footer__box_t {
+    background: url(../i/sprite.png) no-repeat 0 -131px;
+}
+.footer__box_y {
+    background: url(../i/sprite.png) no-repeat 0 -201px;
+}
+.footer__box_m {
+    background: url(../i/sprite.png) no-repeat 0 -272px;
+}
+.footer__text {
+    margin: 0;
+    color: #979797;
+    font-family: Raleway;
+    font-size: 1rem;
+}
+.footer__text span {
+    color: #303030;
+}

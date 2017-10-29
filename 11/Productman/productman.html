@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ProductMan</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,900|Roboto:300,400,900" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header row">
+            <h1 class="header__title">
+                <a href="#">Welcome</a>
+            </h1>
+            <nav>
+                <h2 class="headhide">Menu</h2>
+                <ul class="menu-box">
+                    <li class="menu-box__item">
+                        <a href="#">Recent Work</a>
+                    </li>
+                    <li class="menu-box__item">
+                        <a href="#">Featured Product</a>
+                    </li>
+                    <li class="menu-box__item menu-box__item_menu">
+                        <a href="#"></a>
+                    </li>
+                </ul>
+            </nav>
+        </header><!--/.header-->
+        <div class="content row clearfix">
+            <h2 class="headhide">Content</h2>
+            <div class="content__slider">
+                <div class="content__slider_left col col-6">
+                    <img src="i/black_white.png" alt="">
+                    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                        veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                        adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                    <a href="#">View Project</a>
+                </div>
+                <div class="content__slider_right col col-5">
+                    <img src="i/slider_image.png" alt="">
+                </div>
+                <div class='content__slider_center col col-12 clearfix'>
+                    <input type="radio" name="slider1" id="slider1_1" checked="checked">
+                    <label for="slider1_1"></label>
+                    <input type="radio" name="slider1" id="slider1_2">
+                    <label for="slider1_2"></label>
+                    <input type="radio" name="slider1" id="slider1_3">
+                    <label for="slider1_3"></label>
+                </div>
+            </div><!--/.content__slider-->
+            <div class="content__product col col-12">
+                <div class="content__product_title">
+                    <h3>Featured Product</h3>
+                    <span class="content__product_bg col col-12"></span>
+                </div>
+                <p class="content__product_text">Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. </p>
+                <div class="content__product_imgbox row clearfix">
+                    <img src="i/feature_img1.png" alt="">
+                    <img src="i/feature_img2.png" alt="">
+                    <img src="i/feature_img3_1.png" alt="">
+                    <img src="i/feature_img4.png" alt="">
+                    <img src="i/feature_img5.png" alt="">
+                </div>
+            </div><!--/.content__product-->
+            <div class="content__news col col-12">
+                <h3 class="content__product_title content__news_title ">PRODUCTMAN NEWS</h3>
+                <p class="content__product_text content__news_text">Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. </p>
+                <form action="text.html" class="content__news_form row clearfix">
+                    <span class="content__news_img"></span>
+                    <input type="email" name = "email" id="email" placeholder="Enter your email address" class="content__news_input">
+                    <input type="button" name="btn1" value="SUBSCRIBE" class="content__news_button">
+                </form>
+            </div><!--/.content__news-->
+        </div><!--/.content-->
+        <footer class="footer row">
+            <h2 class="headhide">Social icons</h2>
+            <div class="footer__box">
+                <a href="#" class="footer__box_item footer__box_f"></a>
+                <a href="#" class="footer__box_item footer__box_t"></a>
+                <a href="#" class="footer__box_item footer__box_y"></a>
+                <a href="#" class="footer__box_item footer__box_m"></a>
+            </div>
+            <p class="footer__text">© Copyright <span> Your Company</span> ltd 2016. All Rights Reserved.</p>
+        </footer><!--/.footer-->
+    </div><!--/.container-->
+<!--<script>
+    var btn1 =document.querySelector("[name='btn1']")
+    var email =document.querySelector("[id='email']")
+    btn1.addEventListener('click', function () {
+        console.log ("btn1 clicked");
+        document.getElementById("email").value = "";
+    });
+</script>-->
+</body>
+</html>

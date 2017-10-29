@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+input {
+    outline: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+html {
+    font-size: 13px;
+}
+body {
+    font: 1rem Ubuntu, sans-serif;
+    background: #e42c68; /* For browsers that do not support gradients */
+    background: linear-gradient(to top right, #ff512f, #e42c68);
+    min-height: 100vh;
+}
+.container {
+    max-width: 1200px;
+    margin: 60px auto 70px auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.container_form {
+    width: 460px;
+    background: #fff;
+    border-radius: 8px;
+    padding: 1px 0;
+}
+
+.row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.row::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.col {
+    padding-left: 10px;
+    padding-right: 10px;
+    float: left;
+}
+.col-1 {
+    width: 8.333333333333333%;
+}
+.col-2 {
+    width: 16.66666666666667%;
+}
+.col-3{
+    width: 25%;
+}
+.col-4 {
+    width: 33.33333333333333%;
+}
+.col-5 {
+    width: 41.66666666666667%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-7{
+    width: 58.33333333333333%;
+}
+.col-8 {
+    width: 66.66666666666667%;
+}
+.col-9 {
+    width: 75%;
+}
+.col-10{
+    width: 83.33333333333333%;
+}
+.col-11{
+    width: 91.66666666666667%;
+}
+.col-12 {
+    width: 100%;
+}
+/*====================header===
+                               ===========*/
+.header {
+    margin: 30px;
+    padding: 1px 0;
+    position: relative;
+}
+.header__title {
+    margin-bottom: 30px;
+    margin-top: 0;
+    padding-left: 32px;
+    color: #1b1c1d;
+}
+.header__img {
+    position: absolute;
+    display: block;
+    background: url(../i/key.png) no-repeat;
+    width: 24px;
+    height: 25px;
+    top: 0;
+    left: 0;
+}
+.header__content {
+    margin-bottom: 0;
+    color: #7a7b7f;
+    font-size: 1rem;
+    line-height: 1.538461538461538rem;
+}
+/*====================form===
+                               ===========*/
+.form{
+    margin: 30px 30px 20px;
+}
+.footer {
+    margin: 30px;
+}
+.form-control {
+    width: 100%;
+    color: #7a7b7f;
+    font-size: 1.077rem;
+    line-height: 1.538rem;
+    padding: 12px 14px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    outline: none;
+    border: 1px solid transparent;
+ }
+.form-control:focus {
+    border-color: #ea355a;
+
+}
+.btn{
+    padding: 15px 0;
+    margin: 0;
+    width: 100%;
+    border-bottom: 3px solid #bd1962;
+    background: #ea355a;
+    border-radius: 12px;
+    color: #fff;
+    font-size: 1.384rem;
+    outline: none;
+    cursor: pointer;
+}
+.btn:focus,
+.btn:active {
+   outline: none;
+}
+.footer {
+    margin-top: 0;
+    color: #7a7b7f;
+    font-size: 0.923rem;
+    margin-bottom: 60px;
+}
+a:link {
+    color: #ea355a;
+    text-decoration: none ;
+}
+a:hover {
+    text-decoration: underline;
+}
