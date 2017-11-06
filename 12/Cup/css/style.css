@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 html {
     font-size: 20px;
@@ -14,7 +16,7 @@ body {
     padding: 0 30px;
     margin: auto;
 }
-.clearfix {
+.clearfix::after {
     content: '';
     display: table;
     clear: both;
@@ -50,11 +52,7 @@ p {
     background: #ffffff;
     border-radius: 3px;
     box-shadow: 2px 2px 2px -1px #d4ba6a;
-    margin: 80px 30px 80px 0;
-    float: left;
-    width: 360px;
     padding: 1px 0;
-    position: relative;
 }
 .content__price::after {
     content: "";
@@ -70,77 +68,49 @@ p {
 .content__price_silver::after {
     background-position: 0 -268px;
 }
-.content__menu_gold {
-    margin: 50px 30px 50px 0;
-    padding: 30px 0;
-}
-.content__menu_silver {
-    margin-right: 0;
-}
-.content__menu p:nth-of-type(2) {
-    padding-bottom: 30px;
-}
+
 /*=================adaptive
                 =============*/
 @media (min-width:319px) {
-    .wrap {
-        padding: 0 1px;
-        max-width: 100vh;
-    }
     .content__menu {
-        float: none;
-        display: inline-block;
-        margin: 50px 0;
-        width: 98%;
-    }
-    .content__menu_gold {
-        margin-bottom: 0;
-        margin-top: 0;
+        margin: 80px 1%;
+        width: 96%;
+        padding-bottom: 35px;
     }
 }
 @media (min-width: 768px) {
     /* Стили применят все устройства начиная от 768px  */
-    .wrap {
-        min-width: 768px;
-        padding: 0 7px;
-        margin: auto;
-    }
-    .content__menu {
-        width: 360px;
-        margin: 80px 30px 80px 0;
-    }
-    .content__menu_gold {
-        float: right;
-        margin: 50px 0;
-        padding: 30px 0;
-    }
-    .content__menu_silver {
-        margin-left: 25%;
-        margin-top: 0;
-        margin-right: 0;
-        margin-bottom: 0;
-    }
-}
-    @media (min-width: 780px) {
-    .wrap {
-        padding: 0 30px;
-    }
-}
-    @media (min-width: 1140px) {
-    /* Стили применят все устройства начиная от 1140px  */
-    .wrap {
-        min-width: 1140px;
-        max-width: 1200px;
-        padding: 0 30px;
-    }
     .content__menu {
         float: left;
-        margin: 80px 30px 80px 0;
+    }
+    .content__menu_bronze {
+        width: 46%;
+        margin-right: 3%;
     }
     .content__menu_gold {
-        margin: 50px 30px 50px 0;
-     }
+        width: 46%;
+    }
     .content__menu_silver {
-        margin: 80px 0;
+        width: 46%;
+        margin-left: 25%;
+        margin-top: 0;
+    }
+}
+@media (min-width: 1140px) {
+    /* Стили применят все устройства начиная от 1140px  */
+    .content__menu {
+        width: 30%;
+        margin: 80px 1% 50px;
+        margin-right: 3%;
+    }
+    .content__menu_gold {
+        margin-top: 50px;
+        padding-top: 30px;
+    }
+    .content__menu_gold p:nth-of-type(2){
+        padding-bottom: 30px;
+    }
+    .content__menu_silver {
+         margin-right: 0;
     }
 }
