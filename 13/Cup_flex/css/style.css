@@ -1,0 +1,124 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 20px;
+    color: #333333;
+}
+body {
+    font: 1rem 'Ubuntu', sans-serif;
+    background-color: #fdde7e;
+}
+.wrap {
+    max-width: 1200px;
+    margin: auto;
+}
+.hide__title {
+    position: absolute;
+    top:-9999px;
+    left: -9999px;
+}
+h3 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 4.5rem;
+    color: #02995b;
+    padding-top: 40px;
+    margin: 0;
+    text-align: center;
+    display: block;
+}
+h4 {
+    font-size: 2.8rem;
+    text-align: center;
+    margin: 0;
+    padding: 25px 0 20px 0;
+}
+p {
+    text-align: center;
+    margin: 0;
+}
+p:last-child {
+    padding-bottom: 35px;
+}
+/*=================content
+                =============*/
+.col {
+    background: #ffffff;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px -1px #d4ba6a;
+    padding: 1px 0;
+   }
+.row__price::after {
+    content: "";
+    display: block;
+    height: 135px;
+    width: 135px;
+    background: url(../i/sprite.png) no-repeat;
+    margin: auto;
+}
+.row__price_gold::after {
+     background-position: 0 -135px;
+}
+.row__price_silver::after {
+    background-position: 0 -268px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 80px 0;
+}
+
+
+/*=================adaptive
+                =============*/
+@media (min-width:319px) {
+    /*100%-5%(m)=95%*/
+    .col-sm {
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        flex-basis: 95%; /*flex: 0 0 92%*/
+        margin-bottom: 40px;
+    }
+    .row div:last-child {
+        margin-bottom: 0;
+    }
+}
+@media (min-width:414px) and (max-width: 768px){
+    /*100%-20%(m)=80%*/
+    .col-sm {
+        margin-left: 10%;
+        margin-right: 10%;
+        flex-basis: 80%;
+    }
+}
+@media (min-width: 768px) {
+   /*100%-7.5%(m)=92.5/2=46.25%*/
+    .col-md-2 {
+        margin-left: 0;
+    }
+    .col-md {
+        flex-basis: 46.25%;
+    }
+    .col-md-3 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (min-width: 1170px) {
+/* /*100%-10%(m)=90/3=30%*/
+   .col-3 {
+        margin-left: 0;
+    }
+    .col {
+       flex-basis: 30%;
+       margin-bottom: 0;
+    }
+    .col-2 {
+        margin-top: -30px;
+        padding-top: 30px;
+        margin-bottom: -30px;
+    }
+}
