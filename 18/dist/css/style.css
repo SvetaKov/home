@@ -1,0 +1,257 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500);body {
+  color: #575c7a;
+  font: 14px "Ubuntu", sans-serif;
+  line-height: 1.5em;
+  background: transparent;
+}
+
+.wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  background: #ffffff;
+}
+
+h1 {
+  font-size: 2em;
+  color: #a6430a;
+  margin: 0 0 .5em 0;
+}
+
+h2 {
+  font-size: 1.7em;
+  margin: 0 0 1em 0;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin: 0 0 0 1em;
+}
+
+p {
+  margin: 0 0 .75em 0;
+}
+
+a {
+  color: #de9000;
+}
+
+a:hover {
+  color: #009eff;
+}
+
+a.cta {
+  font-size: 0.92857143em;
+  font-weight: bold;
+  text-decoration: none;
+  margin: .5em 0 0 0;
+  padding: 0 0.85714286em 0 0;
+  background: url(../i/cta_arrow.png) no-repeat right 5px;
+}
+
+a.cta:hover {
+  background-position: right -50px;
+}
+
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.footer-box {
+  font-size: 0.85714286em;
+  color: #9ba0bd;
+  background: #2c4563;
+  padding: 10px 10px 10px 0;
+  border: 1px solid #a6abc5;
+  text-align: center;
+}
+
+.copy-box {
+  color: #f5a06e;
+}
+
+.copy-box a {
+  text-decoration: none;
+  color: #f5a06e;
+}
+
+.copy-box a:hover {
+  text-decoration: underline;
+}
+
+.promo-box {
+  padding: 0;
+}
+
+.promo-box__item {
+  padding: 10px 0 0 0;
+  background-position: 20px 13px;
+  border-top: 1px solid #cccccc;
+  background-repeat: no-repeat;
+}
+
+.promo-box__item_one {
+  background-image: url(../i/im1.jpg);
+}
+
+.promo-box__item_second {
+  background-image: url(../i/im2.jpg);
+}
+
+.promo-box__item_third {
+  background-image: url(../i/im3.jpg);
+}
+
+.promo-content {
+  padding: 0 20px 5px 90px;
+}
+
+.promo-content__title {
+  font-size: 1.14285714em;
+  margin: 0;
+}
+
+.promo-content__text {
+  line-height: 1.28571429em;
+  font-size: 0.92857143em;
+  margin-bottom: 0.71428571em;
+}
+
+.menu {
+  width: 100%;
+  display: block;
+  padding: 10px 0;
+  background: #515673;
+}
+
+.menu__item {
+  display: block;
+  margin: 15px;
+  padding: 9px;
+  border: 1px solid #a6abc5;
+  background: url(../i/mobile_link_arrow.png) no-repeat right center;
+  border-radius: 12px;
+  color: #f5a06e;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.92857143em;
+}
+
+.menu__item:hover {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.welcome-box {
+  padding: 20px 20px 10px 20px;
+}
+
+.header-top {
+  height: 75px;
+  background: url(../i/banner_small.jpg) no-repeat right 0;
+}
+
+.header-top__logo {
+  width: 105px;
+  height: 50px;
+  top: 16px;
+  right: 15px;
+  display: block;
+  text-indent: -9999px;
+  position: absolute;
+  background: url(../i/logo_small.png) no-repeat;
+}
+
+@media (min-width: 500px) {
+  body {
+    background: #2c4563 url(../i/bg.jpg) repeat-x;
+  }
+  h1 {
+    margin-top: 2em;
+  }
+  .header-top {
+    height: 200px;
+    background: url(../i/banner_medium.jpg) no-repeat 90% 0;
+  }
+  .header-top__logo {
+    width: 115px;
+    height: 70px;
+    top: 20px;
+    right: 20px;
+    background: url(../i/logo_medium.png) no-repeat;
+  }
+  .menu {
+    width: 100%;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    position: absolute;
+    top: 200px;
+    background: #a6430a;
+  }
+  .menu__item {
+    display: inline-block;
+    margin: 0 20px 0 0;
+    padding: 3px 10px;
+    border: 0;
+    background: none;
+    border-radius: 0;
+    color: #ffffff;
+    font-size: 1.07142857em;
+  }
+  .menu__item:last-child {
+    margin-right: 0;
+  }
+  .menu__item:hover {
+    border-radius: 5px;
+  }
+  .footer-box {
+    padding-left: 20px;
+    border: 0;
+    text-align: left;
+  }
+}
+
+@media (min-width: 800px) {
+  .header-top {
+    height: 275px;
+    background: url(../i/banner_large.jpg) no-repeat 90% 0;
+  }
+  .header-top__logo {
+    width: 150px;
+    height: 85px;
+    top: 28px;
+    right: 30px;
+    background: url(../i/logo_large.png) no-repeat;
+  }
+  .promo-box {
+    padding: 0 0 70px 20px;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+  }
+  .promo-box__item {
+    width: 33%;
+    background-position: 0 14px;
+  }
+  .promo-content {
+    padding: 0 30px 0 70px;
+  }
+  .menu {
+    top: 275px;
+    -ms-flex-pack: left;
+    -webkit-box-pack: left;
+            justify-content: left;
+  }
+  .menu__item {
+    margin-right: 50px;
+  }
+  .menu__item:first-child {
+    margin-left: 50px;
+  }
+}
