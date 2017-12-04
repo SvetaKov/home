@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Empire</title>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div class="top-header">
+				<h1 class="top-header__title">Empire. Law & Measurements</h1>
+				<a href="#" class="top-header__logo">
+					Welcome to our site
+				</a>
+				<nav class="top-nav">
+					<li class="clearfix"><a class="vmenu" href="#"><img src='i/nav-icon.png' alt="" /></a>
+						<ul class="header-menu">
+							<li><a class="header-menu__item" href="#">УСЛУГИ</a></li>
+							<li><a class="header-menu__item" href="#">КОМПАНИя</a></li>
+							<li><a class="header-menu__item" href="#">ПРОекТЫ</a></li>
+							<li><a class="header-menu__item" href="#">ЛИЦЕНЗИИ</a></li>
+							<li><a class="header-menu__item" href="#">КЛИЕНТЫ И ПАРТнёры</a></li>
+							<li><a class="header-menu__item" href="#">Новости</a></li>
+						</ul>
+					</li>
+				</nav>
+			</div>
+		</header><!--header-->
+	</div>
+	<div class="container-fluid container-fluid_foot">
+		<div class="foot-header container">
+			<p class="foot-header__address">г. Луганск, кв. Шевченко, д. 67, оф. 125</p>
+			<p class="foot-header__phone">(0642) 71 73 06</p>
+		</div>
+	</div>
+
+	<div class="container-fluid_slider">
+		<div class="container container__slider">
+			<h2 class="container__slider_title">ВЫСОКОТОЧНЫЕ ИЗМЕРЕНИЯ</h2>
+			<div class="container__slider_link">
+				<a href="#">Оставить заявку</a>
+			</div>
+			<div class="link-circle">
+				<a class="link-circle__item link-circle__item_active" href="#"><i>1</i></a>
+				<a class="link-circle__item " href="#"><i>2</i></a>
+				<a class="link-circle__item" href="#"><i>3</i></a>
+				<a class="link-circle__item" href="#"><i>4</i></a>
+				<a class="link-circle__item" href="#"><i>5</i></a>
+				<a class="link-circle__item" href="#"><i>6</i></a>
+			</div>
+			<div class="social-button social-button_l ">
+				<a href="#" class="social-icons__item social-icons__item_l"><i>letter</i></a>
+			</div>
+			<div class="social-button social-button_s">
+				<a href="#" class="social-icons__item social-icons__item_s"><i>skype</i></a>
+			</div>
+		</div>
+	</div><!--/.container-fluid_slider-->
+
+    <div class="container">
+		<h3 class="container__title">НАШИ УСЛУГИ</h3>
+		<div class="services">
+		<div class="services-box">
+			<div class="services-box-item__svg">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="99" height="83" viewBox="0 0 99 83">
+					<metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+						<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+							<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:Description rdf:about=""/>
+							</rdf:RDF>
+						</x:xmpmeta>
+
+						<?xpacket end="w"?></metadata>
+					<image id="Векторный_смарт-объект" data-name="Векторный смарт-объект" width="99" height="83" xlink:href="data:img/png;base64,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"/>
+				</svg>
+				<div class="svg-box__border svg-box__border_top-left"></div>
+				<div class="svg-box__border svg-box__border_top-right"></div>
+				<div class="svg-box__border svg-box__border_bottom-right"></div>
+				<div class="svg-box__border svg-box__border_bottom-left"></div>
+			</div>
+			<h4 class="services-box__link"><a href="#">землеустроительные работы</a></h4>
+		</div>
+
+		<div class="services-box">
+			<div class="services-box-item__svg">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="92" height="101" viewBox="0 0 92 101">
+						<metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+							<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+								<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+									<rdf:Description rdf:about=""/>
+								</rdf:RDF>
+							</x:xmpmeta>
+							<?xpacket end="w"?></metadata>
+						<image id="Векторный_смарт-объект" data-name="Векторный смарт-объект" width="92" height="101" xlink:href="data:img/png;base64,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"/>
+					</svg>
+					<div class="svg-box__border svg-box__border_top-left"></div>
+					<div class="svg-box__border svg-box__border_top-right"></div>
+					<div class="svg-box__border svg-box__border_bottom-right"></div>
+					<div class="svg-box__border svg-box__border_bottom-left"></div>
+			</div>
+			<h4 class="services-box__link"><a href="#">ГЕОДЕЗИЯ <span>ПРОМЫШЛЕННАЯ</span></a></h4>
+		</div>
+
+		<div class="services-box">
+			<div class="services-box-item__svg">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="67" height="98" viewBox="0 0 67 98">
+						<metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+							<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+								<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+									<rdf:Description rdf:about=""/>
+								</rdf:RDF>
+							</x:xmpmeta>
+
+							<?xpacket end="w"?></metadata>
+						<image id="Векторный_смарт-объект" data-name="Векторный смарт-объект" width="67" height="98" xlink:href="data:img/png;base64,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"/>
+					</svg>
+					<div class="svg-box__border svg-box__border_top-left"></div>
+					<div class="svg-box__border svg-box__border_top-right"></div>
+					<div class="svg-box__border svg-box__border_bottom-right"></div>
+					<div class="svg-box__border svg-box__border_bottom-left"></div>
+			</div>
+			<h4 class="services-box__link"><a href="#">ПРОМЫШЛЕННАЯ ГЕОДЕЗИЯ</a></h4>
+		</div>
+
+		<div class="services-box">
+				<div class="services-box-item__svg">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="101" height="91" viewBox="0 0 101 91">
+						<metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+							<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+								<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+									<rdf:Description rdf:about=""/>
+								</rdf:RDF>
+							</x:xmpmeta>
+							<?xpacket end="w"?></metadata>
+						<image id="Векторный_смарт-объект" data-name="Векторный смарт-объект" width="101" height="91" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGUAAABbCAMAAABd0rsgAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAC9FBMVEUAAAAEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcEBwcAAACmCLEPAAAA+nRSTlMATsUxBtv9lRJ1QoT47GUCF/KiI7XMN5v0G0vd/p4W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"/>
+					</svg>
+					<div class="svg-box__border svg-box__border_top-left"></div>
+					<div class="svg-box__border svg-box__border_top-right"></div>
+					<div class="svg-box__border svg-box__border_bottom-right"></div>
+					<div class="svg-box__border svg-box__border_bottom-left"></div>
+				</div>
+			   <h4 class="services-box__link"><a href="#">ЮРИДИЧЕСКИЕ УСЛУГИ</a></h4>
+		</div>
+		</div><!--/.services-->
+		<div class="services_link">
+			<a href="#">скачать презентацию</a>
+		</div>
+	</div>
+
+
+
+	<div class="container">
+		<h3 class="container__title">НАШИ ПРОЕКТЫ</h3>
+	</div>
+	<div class="projects">
+		<div class="project-box project-box__item_1">
+			<article class="project-box__item ">
+				<img src="i/projects/img1.png" alt="">
+				<div class="project-box-pic">
+					<h5 class="project-box-pic__title">LOREM IPSUM</h5>
+					<p class="project-box-pic__text">lorem ipsum dolor set amet</p>
+				</div>
+			</article>
+		</div>
+
+		<div class="project-box project-box__item_2">
+			<article class="project-box__item ">
+				<img src="i/projects/img2.png" alt="">
+				<div class="project-box-pic">
+					<h5 class="project-box-pic__title">LOREM IPSUM</h5>
+					<p class="project-box-pic__text">lorem ipsum dolor set amet</p>
+				</div>
+			</article>
+		</div>
+
+		<div class="project-box project-box__item_3">
+			<article class="project-box__item ">
+				<img src="i/projects/img3.png" alt="">
+				<div class="project-box-pic">
+					<h5 class="project-box-pic__title">LOREM IPSUM</h5>
+					<p class="project-box-pic__text">lorem ipsum dolor set amet</p>
+				</div>
+			</article>
+		</div>
+
+		<div class="project-box project-box__item_4">
+			<article class="project-box__item">
+				<img src="i/projects/img4.png" alt="">
+				<div class="project-box-pic">
+					<h5 class="project-box-pic__title">LOREM IPSUM</h5>
+					<p class="project-box-pic__text">lorem ipsum dolor set amet</p>
+				</div>
+			</article>
+		</div>
+
+		<div class="project-box project-box__item_5">
+			<article class="project-box__item ">
+				<img src="i/projects/img5.png" alt="">
+				<div class="project-box-pic">
+					<h5 class="project-box-pic__title">LOREM IPSUM</h5>
+					<p class="project-box-pic__text">lorem ipsum dolor set amet</p>
+				</div>
+			</article>
+		</div>
+
+		<div class="project-box project-box__item_6">
+			<article class="project-box__item">
+				<img src="i/projects/img6.png" alt="">
+				<div class="project-box-pic">
+					<h5 class="project-box-pic__title">LOREM IPSUM</h5>
+					<p class="project-box-pic__text">lorem ipsum dolor set amet</p>
+				</div>
+			</article>
+		</div>
+
+		<div class="project-box project-box__item_7">
+			<article class="project-box__item">
+				<img src="i/projects/img7.png" alt="">
+				<div class="project-box-pic">
+					<h5 class="project-box-pic__title">LOREM IPSUM</h5>
+					<p class="project-box-pic__text">lorem ipsum dolor set amet</p>
+				</div>
+			</article>
+		</div>
+	</div>
+	<div class="container__slider_link-project">
+		<a href="#">посмотреть все проекты</a>
+	</div>
+
+	<div class="container">
+		<h3 class="container__title contacts__title">Контакты</h3>
+		<div class="contacts-box">
+			<div class="contacts-box__item">
+				<div class="contacts-box__item_svg">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33" height="25" viewBox="0 0 33 25">
+						<metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+							<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+								<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+									<rdf:Description rdf:about=""/>
+								</rdf:RDF>
+							</x:xmpmeta>
+
+							<?xpacket end="w"?></metadata>
+						<image id="Векторный_смарт-объект" data-name="Векторный смарт-объект" width="33" height="25" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAZCAQAAAAVxI8kAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCx4SIAklIJgiAAABZUlEQVQ4y+3RoU9bURQH4K8X04lBCGJ0w22KBjUIpqjJjgwEBiYxCBwDjwL+AoIdzGAezRAViKJIoAoIgWSmKQHUEpYwRUG0A0opdHRyR7173u9+uTknloSiN55Tx7r2BDCr9AygZBYVYsmwi78ELgxbgljynV/O8N53nQ0Dpz7K45WXwZZDaeT1220Q2NUvj7RDW0GHNhnTKEjJNgBkpRTwRUabjvIsgnnL4s6lLT4BLEo7F/fVQnmS4ebXmJyESxOm6u6nZMqESwk5n/80Y8mrO5ETn2xjyDcvaoDfRkXoE3l92w5VoYRNY4gMOK3ZwYAIozbvAvcJ4pbNaanZT3kHwZwV8eor9wmYEWlVkLJe6axLKWi1ZqY2Xj2L2zow6Ad6dSnawVsZ3Q9F6xH8NGLj5vTBqvaHg0G9apc1WfmelK0HPPaKcu3Z163nschTRAMVmgX+E/+cOGpSOArGFZsAisavAfdXWf09cS+vAAAAAElFTkSuQmCC"/>
+					</svg>
+				</div>
+				<div class="contacts-box__item_text">empire_lg@mail.ru </div>
+			</div>
+			<div class="contacts-box__item">
+				<div class="contacts-box__item_svg">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="25" viewBox="0 0 19 25">
+						<metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+							<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+								<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+									<rdf:Description rdf:about=""/>
+								</rdf:RDF>
+							</x:xmpmeta>
+
+							<?xpacket end="w"?></metadata>
+						<image id="Векторный_смарт-объект" data-name="Векторный смарт-объект" width="19" height="25" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAZCAQAAAB5wt0hAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCx4SICf59pXtAAABWklEQVQoz4WSv0sCYQCGHz/7SRJIcbXVFILZkmCRQwg6lkWbNQoh/gXhWGNLW5BGY9CQFNHiIkLdIAV9QVwtLU05FYgK2nB6fmf+eKf3fe75uIPvHF6sBNkhxByT/PBJjisKIAFwNLUFTlmnM3ni0mhrIbK46JZfojIHAvBz20MCFzeLfnB4h3jBQ7+84XNqMeI2KHmgxoxCpvkQxBRQZhMfUZbYoKzwmFM7YdyaKTLNZlAjbPEpgVs5da/0O6W7BRVlzipd/bqKwFDmASPNNkxK4YZT8xCw5jwRSoyxSpqgol06vAEeGZQVgU5xgFSUugAOB2hH5p1m0ftIOtem1iBJvYdUJykb4NQAvphgrat2LC+g/VuOUsT7T3plWVbAfClAhV3bfZhsr8WEBZ9JdGhJnlpVKDhDWlnnnLWHsJ1PkG+2AvvqA7tWZRsDeGeLam8NSoTRifBtx39nslJYs/H41wAAAABJRU5ErkJggg=="/>
+					</svg>
+				</div>
+				<div class="contacts-box__item_text">г. Луганск, кв. Шевченко, д. 67, оф. 125</div>
+			</div>
+			<div class="contacts-box__item">
+				<div class="contacts-box__item_svg">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 25 25">
+						<metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+							<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+								<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+									<rdf:Description rdf:about=""/>
+								</rdf:RDF>
+							</x:xmpmeta>
+
+							<?xpacket end="w"?></metadata>
+						<image id="Векторный_смарт-объект" data-name="Векторный смарт-объект" width="25" height="25" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAQAAABu4E3oAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCx4SIDqa8Pk0AAABcElEQVQ4y42SuUsDQRyFv931BFFIIRZGsLDQLOKBqbTwQhAUIWgbbTZi4V9gL6Sw8U6hphSDio1aiNgKYpAlFoKCpLCK4EFQ8WjWYXd22ezr3pvfx8y8GSUCAINso7BAGkmmHKACMMYxYRrZYQONEioDetil3PIJFBL+iEqIDNW2xMAohaRpkrJF6vyREVcWYsgfeXBlRXL+yLmU3NHHrT9y6PDLtHPlf30lopGnwXLXdMkDXk/5zYpwHwSQCqzxbrkoLcGQZ5LCbVERBIElnizfSwolCPLGvEjirMmQ3qrH9DonAnvsi4lZJ6R3c0WGe934L/l/JUSWsJhLY/AJQBU3opQUc+a3KoYKjPNiO96ZNZi0tWiwat8FYIADaoX74ZJKOqXbTzsR6ODIdjwv5VUpyNJhK8JLv6orKhBjSryTrC9mtHqvhRybfBB1/YQik+aJNwKfXLDOK23UiOyRUfNcbswtjWEm6KeZU+JmAeAPV0dPcsLnwp0AAAAASUVORK5CYII="/>
+					</svg>
+				</div>
+				<div class="contacts-box__item_text">(0642) 71 73 06 </div>
+			</div>
+			<div class="contacts-box__item">
+				<div class="contacts-box__item_svg">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="25" viewBox="0 0 24 25">
+						<metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+							<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+								<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+									<rdf:Description rdf:about=""/>
+								</rdf:RDF>
+							</x:xmpmeta>
+
+							<?xpacket end="w"?></metadata>
+						<image id="Векторный_смарт-объект_копия_7" data-name="Векторный смарт-объект копия 7" width="24" height="25" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAZCAQAAACBIibWAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCx4SIREvVzE1AAACGElEQVQ4y4XUXWhOcRwH8M85bV4mhNYKF5u8P0+WC9wpRC5wwZLcuJFioUVckJEkxZ5CIu+5IFy4ciEjF4qUmQ4XlLANy0uaty2ePS6es7OzYb435/fy/Z7/Od/f75wgA8xSZ74KP9x32hVjDPHZJyJ9EWQI7Lfd3/DWTeejxv6CvXYaCPfURg97BdWaBAbGTxujE8WwxOZ+9E533fNeXrk5FihBqePZsihXPKHF+BT9hB0+pvJxjlkGChZHNwgy3akTDtkaR8P80lV8aJesBK2mRt9ChYT+RT1Y6oWvOt1RTlRIHByvltCTRNDsG2hQBeY6Dd7ojhnrs0HociIYHF8bfI+jpbZlq+SEcV6pOshUe5SYV+kNGGGReRaa9IfBG8KUR6XOKQMdrqo1WaUtXvYRTAgNS6ULNalRmuSvNJjqTIoxPIzN68FkV7xz0VoTi4Woyzr3e8caakmSvOMO+2m0VU567oXVEOWdTDivSzzVFftzRB3a7YubVS64o43UewwNdbqdDA5yWpN2dzyBUUllRYhTcVIjxA/LPQbPrPQWLE8EU4IMoSYzwB6740aZfNGOSHax68m+FUJ0WycP6h0zHHyP3RuU3exaaj3bgvibrnU0LnW47oF2VJhuiYo+tp/tEVDnYLIz/0LBzF5KziKv/iPYFzWn79lomk2a/0k/YFfxr9EfY81UodQHI60x2xDtbslFD+A3NeCVkX1PoQEAAAAASUVORK5CYII="/>
+					</svg>
+				</div>
+				<div class="contacts-box__item_text">empire_lg</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<h3 class="container__title contacts__title contacts__title">СВЯЗАТЬСЯ</h3>
+		<div class="contacts__form">
+			<form action="test_home.html">
+
+				<div class="contacts__form_left">
+					<input class ="contacts__form_text" type="text" name="name" placeholder="Имя" autofocus>
+					<input class ="contacts__form_text" type="email" name="email" placeholder="Email">
+				</div>
+				<div class="contacts__form_right">
+					<textarea class ="contacts__form_text" name="Message" id="" cols="20" rows="3" placeholder="Сообщение"></textarea>
+					<div class="form__button">
+						<input class ="contacts__form_btn" type="submit" name="btn1" value="ОТПРАВИТЬ">
+					</div>
+				</div>
+			</form><!--end form-->
+		</div>
+	</div>
+<footer class="foot">
+	<div class="container foot-container">
+		<nav class="top-nav">
+				<ul class="header-menu footer-menu">
+					<li><a class="header-menu__item" href="#">УСЛУГИ</a></li>
+					<li><a class="header-menu__item" href="#">КОМПАНИя</a></li>
+					<li><a class="header-menu__item" href="#">ПРОекТЫ</a></li>
+					<li><a class="header-menu__item" href="#">ЛИЦЕНЗИИ</a></li>
+					<li><a class="header-menu__item" href="#">КЛИЕНТЫ И ПАРТнёры</a></li>
+					<li><a class="header-menu__item" href="#">Новости</a></li>
+				</ul>
+		</nav>
+		<div class="social-icons">
+			<div class="foot-box__item_svg">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="28" viewBox="0 0 28 28">
+					<metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+						<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+							<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:Description rdf:about=""/>
+							</rdf:RDF>
+						</x:xmpmeta>
+
+						<?xpacket end="w"?></metadata>
+					<image id="Векторный_смарт-объект_копия_8" data-name="Векторный смарт-объект копия 8" width="28" height="28" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAQAAADYBBcfAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCx4SIi0rFR5xAAABdklEQVQ4y62Uv0tbURSAv8T4E6MIOohTUEpBFBykDh2sQykOkkUp6B/g31AoduooXaqCzoZuLRYKXYqDiF1MqCAZbN10kNRAQLTq59AXIS363gueM9zLOefjnHvOvTdhiS7iy++E1oEByfowSEWKOifPMe2kGaYlsBkua3ZJoPmqMRzM3UIxwUwNeBAV/BUAzyx66KGXVUdYc8rBOsmj+sbR+GBzvO/mvGaPMt8AGKIfgEUy4XMcr+nnX/1RdcYtNV3dpLig6Y6gAU45owhAHz0AdNx6HbF4T7n5oMR3/zqS7PKEzfhdTTLGKc9Zjw9uscAf5liJSXqmfrDJhKvxzjjId2b4QivzfIqTMW2zOfWzKdssRM2IR07YYE59Lz62EhXc9sIXtlhQZ8TZqGDGNStmHPHasv3i25qHnDVr1o3/wYpTbvpVXFLzdoqvvAr5GUQtOeqlL223oO7YLY67HwaW1Dcue2Kfve6pP30qppz2o0d3cKUb5kzMvjXlIyUAAAAASUVORK5CYII="/>
+				</svg>
+			</div>
+			<div class="foot-box__item_svg">
+				<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="29" viewBox="0 0 28 29">
+					<metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+						<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+							<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:Description rdf:about=""/>
+							</rdf:RDF>
+						</x:xmpmeta>
+
+						<?xpacket end="w"?></metadata>
+					<image id="Векторный_смарт-объект_копия_8" data-name="Векторный смарт-объект копия 8" width="28" height="29" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAdCAMAAACOj/wDAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABX1BMVEUAAAAaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsaFxsAAADii94YAAAAc3RSTlMAk/3rrEUIi/6lBszPEfK8IkntfC38VYjuQCvk+yeW3xnIFUbc9kEmtBLosQxpSCgcUFL6wS/3AtbCA5zx78AQ6XkKyz8fZpRx05EWgrMpFCR1ybC/vWxjNTDQ2lit+GFPCeJ3gIcuMvP1faDwipBbPbWXwFzQywAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCx4SIxUaDJeuAAABM0lEQVQoz83S+TPDQBQH8JekiFujSrQlShxVRzRaKoTSUjdx30fdt/f/z9gnMxpJ62ffH/a9mc/s7tuZBY7HYgRfRWWViNU1tXX1DTwHTqM0NvklbA60BFuRB3SnTW4PhSMdnUoXEgrBaHdPUdXePql/IDYYHyIcBoAR0bF3VMMxOaGPM0ymGMKE4+TJ9JQR8E/PMBRNZqlZ571zmXlhIZujYxcZLv0aKixH8/zyyve0+uqaa2RpfUPHhPcpdkKb6a0k4bZlWTuIBiuWirt72j4XQ+EAFEKN3XmIeERDH5/QCplTPDsHN16AncsrRJ8bf3LNwIORws0t1bsSmL1HfFBYEy+Bj/SOHHWqF58IC9Q9e9EifPkLX/8zvpmm+Y6YZ8X8IPykzrCxbDw/3hEeuLLKc1+mmef69a1HKwAAAABJRU5ErkJggg=="/>
+				</svg>
+			</div>
+		</div>
+	</div>
+</footer>
+<script src="js/app.js"></script>
+</body>
+</html>
