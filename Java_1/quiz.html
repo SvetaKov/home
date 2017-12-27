@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+</head>
+<body>
+<!-- Задание приведено в файле js/quiz.js -->
+<div class="container">
+    <div id="right">
+
+    </div>
+    <ol id="result_right">
+
+    </ol>
+    <div id="wrong">
+
+    </div>
+
+    <ol id="result_wrong">
+
+    </ol>
+</div>
+
+<script>
+
+    const arr = [4,3,25];
+    const text = ['2+2=', '9/3=', '5*5='];
+
+    let answ = [];
+    let right = [];
+    let wrong = [];
+
+    let a;
+    let b;
+    let c;
+
+    let newStRight = '';
+    let newStWrong = '';
+
+    while (isNaN(a)) {
+        a = parseFloat(prompt("2+2"));
+    }
+    while (isNaN(b)) {
+        b = parseFloat(prompt("9/3"));
+    }
+    while (isNaN(c)) {
+        c = parseFloat(prompt("5*5"));
+    }
+
+   answ = [a,b,c];
+
+
+
+    for(let i = 0, len = arr.length; i < len; i++) {
+
+     if  (answ[i] === arr[i]){
+         let t = text[i];
+         let an = answ[i];
+
+         right.push(answ[i]);
+         newStRight += `<li>${t}${an}</li>`;
+
+          }
+
+          else {
+         let r = text[i];
+         let w = answ[i];
+
+          wrong.push(answ[i]);
+          newStWrong += `<li>${r}${w}</li>`;
+
+         }
+     }
+
+     if (right.length !== 0) {
+
+        document.getElementById('right')
+            .innerHTML = ("</br></br>You got  " +right.length+"   question(s) right!</br>" + "</br> Correct guestions: </br></br>" );
+        document.getElementById('result_right')
+            .innerHTML = newStRight;
+
+    }
+
+
+    if (wrong.length ===3) {
+
+        document.getElementById('wrong')
+            .innerHTML = ("</br></br>You haven't right questions!</br>" + "</br></br>Wrong guestions: </br></br>" );
+        document.getElementById('result_wrong')
+            .innerHTML = newStWrong;
+    }
+   else {
+        if (wrong.length !==0 ) {
+            document.getElementById('wrong')
+                .innerHTML = ("</br></br>Wrong guestions: </br></br>" );
+            document.getElementById('result_wrong')
+                .innerHTML = newStWrong;
+        }
+    }
+
+</script>
+
+
+<script src="js/quiz.js">
+
+
+
+
+
+
+</script>
+</body>
+</html>

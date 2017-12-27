@@ -1,0 +1,183 @@
+<!doctype html>
+<html>
+ <head>
+    <title>index.html</title>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+<h1>Passengers</h1>
+
+    <div id="passAdd"></div>
+    <ol id="pass"></ol>
+
+    <div id="passRemove"></div>
+    <ol id="passRem"></ol>
+
+
+
+    <div id="passInsert"></div>
+    <ol id="passIns"></ol>
+
+    <div id="passNext"></div>
+    <ol id="passN"></ol>
+
+
+<!--
+Есть массив пассажиров поезда  pList
+Написать две функции
+addPassenger(name, list);
+- name -> имя пассажира, list -> массив пассажиров (pList )
+- если массив пассажиров пустой то просто добавляет имя  пассажира name в массив
+- если в массиве уже есть пассажиры, то добавляет имя пассажира
+  name в первую найденную свободную ячейку (то есть в массиве не
+  должно быть пустых ячеек)
+
+removePassenger(name, list);
+- производит поиск по массиву и удаляет пассажира, имя которого
+  передается в качестве аргумента name
+-->
+
+<script>
+
+    let newStAdd = '';
+    let newStRemove = '';
+    let newStInsert = '';
+    let newStNext = '';
+    let pList = [];
+    let list ;
+
+
+
+    let count = pList.length;
+
+
+
+
+function removePassenger(name, list) {
+    for (let i = 0; i < count; i++) {
+        var value = pList[i];
+        var res;
+        if (res = value.find(item => item === name)) {
+            value.shift();
+            value.unshift('nothing');
+        }
+    }
+}
+
+if (count ===0) {
+
+    function addPassenger(name, list) {
+        count = pList.length;
+        list = ++count;
+        name = pList.push ([name, list]);
+    }
+}
+count = pList.length;
+
+addPassenger("Tom", list);
+addPassenger("Bill", list);
+addPassenger("John", list);
+
+    for(let i = 0, len = count; i < len; i++) {
+
+        let t = pList[i];
+        newStAdd += `<li>${t}</li>`;
+
+    }
+
+   console.log(count);
+
+
+        document.getElementById('passAdd')
+            .innerHTML = ("</br></br>Add passengers: </br></br>" );
+         document.getElementById('pass')
+        .innerHTML = newStAdd;
+
+
+
+
+
+removePassenger("Bill", list);
+removePassenger("John", list);
+
+    for(let i = 0, len = count; i < len; i++) {
+
+        let t = pList[i];
+        newStRemove += `<li>${t}</li>`;
+
+    }
+
+    document.getElementById('passRemove')
+        .innerHTML = ("</br></br>Remove passengers Bill and John: </br></br>" );
+    document.getElementById('passRem')
+        .innerHTML = newStRemove;
+
+
+if (count !==0) {
+
+    function addPassenger(name, list) {
+        for (let i = 0; i < count; i++) {
+            var value = pList[i];
+            var res;
+
+            if (res = value.find(item => item === 'nothing')) {
+                pList[i][0] = name;
+                break;
+            }
+        }
+    }
+}
+
+addPassenger ("Pete", list);
+addPassenger ("Sergey", list);
+
+
+    for(let i = 0, len = count; i < len; i++) {
+
+        let t = pList[i];
+        newStInsert += `<li>${t}</li>`;
+
+    }
+
+    document.getElementById('passInsert')
+        .innerHTML = ("</br></br>Insert passengers Pete and Sergey on places of Bill and John: </br></br>" );
+    document.getElementById('passIns')
+        .innerHTML = newStInsert;
+
+
+
+
+
+if ((count !==0)&&((pList.find(item => item !== 'nothing')))) {
+
+    function addPassenger(name, list) {
+        count = pList.length;
+        list = ++count;
+        name = pList.push([name, list]);
+    }
+}
+
+addPassenger ("Kate", list);
+addPassenger ("Julia", list);
+addPassenger ("Rimma", list);
+
+
+    for(let i = 0, len = count; i < len; i++) {
+
+        let t = pList[i];
+        newStNext += `<li>${t}</li>`;
+
+    }
+
+    document.getElementById('passNext')
+        .innerHTML = ("</br></br>Add next passengers : </br></br>" );
+    document.getElementById('passN')
+        .innerHTML = newStNext;
+
+
+</script>
+</div>
+</body>
+</html>

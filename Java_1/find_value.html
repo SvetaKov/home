@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Work3</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+<div class="container">
+<h2>Work 3</h2>
+
+<script>
+// 1.Создать функцию find(arr, value), которая ищет в массиве arr
+// значение value и возвращает его номер, если найдено
+//  значение  или -1, если значение не найдено.
+
+var arr = [0, 3,  "test", true, false, -5];
+
+let len;
+
+
+
+function find (arr, value) {
+    var res = arr.findIndex(item => item === value);
+    return (res);
+}
+
+
+
+document.write("Массив arr = ["+arr + "]</br></br>");
+document.write("<br>Значение найдено и номер итератора test в массиве = " + find(arr, "test"));
+document.write("<br>Значение найдено и номер итератора 0 в массиве = " + find(arr, 0));
+document.write("<br>Значение something не найдено, выводим -1 = " + find(arr, "something"));
+document.write("<br>Значение найдено и номер итератора -5 в массиве =" + find(arr, -5));
+document.write("<br>Значение найдено и номер итератора true в массиве =" + find(arr, true));
+document.write("<br>Значение найдено и номер итератора false в массиве =" + find(arr, false));
+
+
+
+
+
+
+
+
+
+//////////////Это я вначале не поняла задание)))), но решила не удалять////////////////
+
+/////////////////////////   USE FUNCTION   ////////////////////////////////////////
+
+/*function find() {
+    for(let i = 0, len = arr.length; i < len; i++) {
+        var val = typeof arr[i];
+        if (val === 'number') {
+            console.log ("Значение найдено и номер итератора равен:", i);
+            document.write("<br>" + "Значение найдено и номер итератора равен: ", i);
+        }
+        else {
+            console.log ("Значение не найдено и равно: -1", arr[i]);
+            document.write("<br>" +"Значение не найдено и равно: -1");
+        }
+    }
+
+}
+find ();*/
+
+
+/////////////////////////   USE FOR   ////////////////////////////////////////
+/*var val = typeof arr;
+
+for(let i = 0, len = arr.length; i < len; i++) {
+     var val = typeof arr[i];
+     if (val === 'number') {
+         console.log ("Значение найдено и номер итератора равен:", i);
+         document.write("<br>" + "Значение найдено и номер итератора равен: ", i);
+    }
+    else {
+         console.log ("Значение не найдено и равно: -1", arr[i]);
+         document.write("<br>" +"Значение не найдено и равно: -1");
+     }
+};*/
+
+///////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+</script>
+
+
+</div> <!-- /.container -->
+</body>
+</html>
